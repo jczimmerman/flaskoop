@@ -1,13 +1,20 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-  <h1>Adventure Game</h1>
-  
+<head>
+
+  <title> Dusty Trails </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<h1> Dusty Trails Adventure Game </h1>
+
+{% block content %}
 <section class="content">
-  <header>
+  <p>This game your goal is to go on an adventure, and make
+  it as far as you can. Enjoy!</p>
 
-    {% block header %}{% endblock %}
+  <a href="{{ url_for('scenes.tavern') }}" class='play-button'>Click to play!</a>
 
-  </header>
 </section>
+{% endblock %}

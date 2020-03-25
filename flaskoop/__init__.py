@@ -25,11 +25,12 @@ def create_app(test_config=None):
         pass
 
     # a simple page that says hello
-    @app.route('/')
+    @app.route('/hello')
     def hello_world():
         return 'Hello, World!'
 
-    from . import test
-    app.register_blueprint(test.bp)
+    from . import scenes
+    app.register_blueprint(scenes.bp)
+    app.add_url_rule('/', endpoint='index')
 
     return app

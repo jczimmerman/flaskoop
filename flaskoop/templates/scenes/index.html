@@ -1,19 +1,15 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}{% endblock %}</h1>
-{% endblock %}
-
 {% block content %}
-  {% for test in tests %}
-    <article class="post">
 
-          <h1>{{ test }}</h1>
+<h1>{{ scene['title'] }}</h1>
 
-      <p class="body">This the test: {{ test }}</p>
+<p class='intro'>{{ scene['intro'] }}</p>
 
-    </article>
-      <hr>
-    
-  {% endfor %}
+<form>
+  <label for="action">What do you do?</label>
+  <input type="text" name="action" id="action" />
+  <input type="submit" value="Submit">
+</form>
+
 {% endblock %}
