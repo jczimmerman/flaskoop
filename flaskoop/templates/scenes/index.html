@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h1>{{ scene['title'] }}</h1>
+<h2 class='title'>{{ scene['title'] }}</h2>
 
 <p class='intro'>{{ scene['intro'] }}</p>
 
-<form>
+<form method="post">
   <label for="action">What do you do?</label>
   <input type="text" name="action" id="action" />
   <input type="submit" value="Submit">
