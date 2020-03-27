@@ -96,7 +96,7 @@ def stranger():
 def stranger_advice():
 
     current_scene = {
-    "title": "Approaching the stranger",
+    "title": "Approaching the stranger - advice",
     "intro": """You accept the stranger's offer. He replies, 'Good, I will
     give you some advice then. When you come across a lock, the way in is as easy
     as ABC.' The stranger is done talking now, and you decide to go on your way.
